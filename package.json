@@ -4,7 +4,7 @@
   "description": "TGA Sapient|StackRoute Exercise_1 based on NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js",
+    "test": "./node_modules/.bin/jasmine spec/*_spec.js && node_modules\\.bin\\istanbul cover node_modules\\jasmine\\bin\\jasmine.js",
     "start": "node index.js"
   },
   "repository": {
@@ -21,10 +21,8 @@
     "json2yaml": "^1.1.0"
   },
   "devDependencies": {
-    "jasmine": "^2.8.0",
-    "karma": "^2.0.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.1.1"
+    "eslint": "^4.14.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.8.0"
   }
 }

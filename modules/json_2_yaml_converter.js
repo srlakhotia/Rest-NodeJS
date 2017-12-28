@@ -4,11 +4,13 @@ var fileReader = require('./file_reader'),
     yamlText;
 
 function jsonConverter(jsonPath, yamlPath, callback) {  
-    if(!jsonPath) {
+    if(!jsonPath || jsonPath.split('.').pop().toLowerCase() !== 'json') {
         callback("Provide a path to JSON file (source)");
+        return;
     }
-    if(!yamlPath) {
-        callback("Provide a path to YAML file (destination)")
+    if(!yamlPath || yamlPath.split('.').pop().toLowerCase() !== 'yml') {
+        callback("Provide a path to YAML (.yml) file (destination)");
+        return;
     }
     fileReader(jsonPath, (err, data) => {
         let rawJSON;
@@ -16,7 +18,13 @@ function jsonConverter(jsonPath, yamlPath, callback) {
             callback(err);
             return;
         }
-        rawJSON = JSON.parse(data);
+
+        try {
+            rawJSON = JSON.parse(data);
+        } catch(e) {
+            rawJSON = data;
+        }
+
         rawJSON && rawJSON.length && rawJSON.forEach((myObj, index) => {
             myObj.size = JSON.stringify(myObj).length;
         });
