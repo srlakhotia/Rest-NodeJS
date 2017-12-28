@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srlakhotia/tga-exercise_1_nodejs.git"
+    "url": "git+https://github.com/srlakhotia/tga-exercise_1_nodejs_shadow.git"
   },
   "author": "Sneh Raj Lakhotia",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/srlakhotia/tga-exercise_1_nodejs/issues"
+    "url": "https://github.com/srlakhotia/tga-exercise_1_nodejs_shadow/issues"
   },
-  "homepage": "https://github.com/srlakhotia/tga-exercise_1_nodejs#readme",
+  "homepage": "https://github.com/srlakhotia/tga-exercise_1_nodejs_shadow#readme",
   "dependencies": {
     "json2yaml": "^1.1.0"
   },
