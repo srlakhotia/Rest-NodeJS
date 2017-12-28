@@ -1,0 +1,30 @@
+{
+  "name": "tga-exercise_1_nodejs",
+  "version": "1.0.0",
+  "description": "TGA Sapient|StackRoute Exercise_1 based on NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srlakhotia/tga-exercise_1_nodejs.git"
+  },
+  "author": "Sneh Raj Lakhotia",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/srlakhotia/tga-exercise_1_nodejs/issues"
+  },
+  "homepage": "https://github.com/srlakhotia/tga-exercise_1_nodejs#readme",
+  "dependencies": {
+    "json2yaml": "^1.1.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1"
+  }
+}
